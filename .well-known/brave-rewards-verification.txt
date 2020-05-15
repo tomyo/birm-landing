@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: birm.xyz
+Token: 2c731035ca682419ef3571870d189d241b79c884751d998a5abe5f72793d3e92
