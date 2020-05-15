@@ -6,6 +6,11 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+:root {
+	--violetin: #505393;
+	--celestin: #76ddff;
+	--celestin2: #70c8f8;
+};
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -233,7 +238,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px #fff;
+		border-bottom: dotted 1px #fff;
 		margin: 3em 0;
 	}
 
@@ -2051,7 +2056,7 @@ input, select, textarea {
 			-ms-transform: rotate(-45deg);
 			transform: rotate(-45deg);
 			border-radius: 3px;
-			border: solid 2px #fff;
+			/*border: solid 0px #fff;*/
 			display: inline-block;
 			font-size: 1.35em;
 			height: calc(3em + 2px);
@@ -2086,7 +2091,7 @@ input, select, textarea {
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			color: var(--celestin);
 		}
 
 /* Image */
@@ -2487,7 +2492,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: var(--violetin);
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2497,7 +2502,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: var(--celestin) !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2505,7 +2510,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #eb341c !important;
+				background-color: var(--celestin2) !important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2817,7 +2822,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: var(--violetin);
 			color: #c8ece9;
 		}
 
@@ -2980,7 +2985,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: var(--violetin);
 			color: #d3d4e4;
 		}
 
@@ -3034,7 +3039,7 @@ input, select, textarea {
 
 				.wrapper.style3 select option {
 					color: #ffffff;
-					background: #505393;
+					background: var(--violetin);
 				}
 
 			.wrapper.style3 input[type="checkbox"] + label,
@@ -3139,7 +3144,7 @@ input, select, textarea {
 			}
 
 		.wrapper.style4 {
-			background-color: transparent;
+			background-color: rgba(0, 0, 0, 0.7);
 		}
 
 		.wrapper.style5 {
@@ -3351,7 +3356,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: var(--celestin);
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3758,13 +3763,11 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		max-width: 45em;
+		align-items: center;
 	}
 
 		#cta .inner header {
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
+
 			padding-right: 3em;
 			width: 70%;
 		}
@@ -3773,12 +3776,12 @@ input, select, textarea {
 				color: inherit;
 			}
 
-		#cta .inner .actions {
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
-			width: 30%;
+		#cta .inner .avatar {
+		    border-radius: 50%;
+		    width: 160px;
+		    object-fit: cover;
+		    height: 160px;
+
 		}
 
 		@media screen and (max-width: 980px) {
